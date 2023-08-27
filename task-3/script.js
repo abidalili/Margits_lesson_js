@@ -12,6 +12,7 @@ console.log("User Name:", userName);
 console.log("User Question:", userQuestion);
 
 //Even or odd
+
 function isPositive(number) {
   return number > 0;
 }
@@ -20,7 +21,7 @@ function isEven(number) {
   return number % 2 === 0;
 }
 
-function getPositiveNumberFromUser() {
+function getNumberFromUser() {
   let userInput = parseFloat(prompt("Please enter a number:"));
 
   while (!isPositive(userInput)) {
@@ -31,7 +32,7 @@ function getPositiveNumberFromUser() {
   return userInput;
 }
 
-let userNumber = getPositiveNumberFromUser();
+let userNumber = getNumberFromUser();
 
 if (isEven(userNumber)) {
   console.log(`Number ${userNumber} is even.`);
