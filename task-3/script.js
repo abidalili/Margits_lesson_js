@@ -58,5 +58,3 @@ let statements = [
 
 let decision = statements[randomNumber - 1];
 console.log(decision);
-gehgtr;
-dtyjtn;
