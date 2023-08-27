@@ -11,6 +11,34 @@ let userQuestion = "What did you learn today??";
 console.log("User Name:", userName);
 console.log("User Question:", userQuestion);
 
+//Even or odd
+function isPositive(number) {
+  return number > 0;
+}
+
+function isEven(number) {
+  return number % 2 === 0;
+}
+
+function getPositiveNumberFromUser() {
+  let userInput = parseFloat(prompt("Please enter a number:"));
+
+  while (!isPositive(userInput)) {
+    alert("Please enter a positive number.");
+    userInput = parseFloat(prompt("Please enter a number:"));
+  }
+
+  return userInput;
+}
+
+let userNumber = getPositiveNumberFromUser();
+
+if (isEven(userNumber)) {
+  console.log(`Number ${userNumber} is even.`);
+} else {
+  console.log(`Number ${userNumber} is odd.`);
+}
+
 //decision making app
 
 const randomNumber = Math.floor(Math.random() * 10) + 1;
@@ -30,3 +58,4 @@ let statements = [
 
 let decision = statements[randomNumber - 1];
 console.log(decision);
+gehgtr;
