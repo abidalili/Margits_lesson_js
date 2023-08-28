@@ -58,20 +58,52 @@ console.log("Sum of even numbers:", evenSum);
 
 // 5.  Make a program that asks numbers from the user, until user gives 0 and
 //     then program ends. In the end program prints out average of the numbers.
-let total = 0;
-input = 0;
-let userInput = parseInt(prompt("enter a number"));
-while (userInput !== 0) {
-  let numbers = parseInt(prompt("enter a number"));
-  if (userInput > 0) {
-    input++;
-    total += userInput;
+// let total = 0;
+// let count = 0;
+
+// let userInput = parseInt(prompt("Enter a number"));
+
+// while (userInput !== 0) {
+//   if (userInput > 0) {
+//     total += userInput;
+//     count++;
+//   }
+
+//   userInput = parseInt(prompt("Enter a number"));
+// }
+
+// let average = total / count;
+
+// console.log("Sum of positive numbers:", total);
+// console.log("Average of positive numbers:", average);
+
+let userNum,
+  num1 = 0,
+  counter = 0;
+do {
+  userNum = parseFloat(prompt("Enter a number"));
+  if (userNum > 0) {
+    num1 += userNum;
+    counter++;
   }
-  userInput = parseInt(prompt("Enter a positive number"));
-}
-average = total / input;
+} while (userNum != 0);
+console.log(`Average: ${num1 / counter}`);
+
 // 6.  Make a program that asks 25 numbers form the user. In the end program
-//     printsout average of the numbers.
+//     printout average of the numbers.
+
+let sum = 0;
+let count = 0;
+
+for (let i = 0; i < 25; i++) {
+  let number = parseInt(prompt("Enter a number: "));
+  sum += number;
+  count++;
+}
+
+let averageTotal = sum / count;
+
+console.log("Average of the 25 numbers:", averageTotal);
 
 // 7.  Make a program that ask first one number from the user. After that the
 //     program asks: "Do you want to continue giving numbers?(y/n)". If user
