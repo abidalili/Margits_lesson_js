@@ -3,24 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Task-5</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header></header>
     <main>
-      <h1>Lorem ipsum dolor sit amet.</h1>
+      <h1>Gasoline price calculator</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aliquam
         atque iure, asperiores possimus porro mollitia rem excepturi odio
         quibusdam nisi voluptate dicta quae, tempora quas adipisci ratione quod.
         Mollitia.
       </p>
-      <ul>
-        <li>Lorem ipsum dolor sit amet consectetur.</li>
-        <li>Deserunt veniam ipsum a blanditiis natus!</li>
-        <li>Velit reprehenderit non distinctio exercitationem amet?</li>
-      </ul>
+      <div class="input-group">
+        <label for="price">Price:</label>
+        <input
+          type="number"
+          id="price"
+          name="price"
+          placeholder="Enter price"
+        />
+      </div>
+
+      <div class="input-group">
+        <label for="money">Money:</label>
+        <input
+          type="number"
+          id="money"
+          name="money"
+          placeholder="Enter amount of money"
+        />
+      </div>
+
+      <button class="btn" onclick="calculateAverage()">Calculate</button>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis,
+        placeat!
+      </p>
     </main>
     <footer></footer>
     <script src="main.js"></script>

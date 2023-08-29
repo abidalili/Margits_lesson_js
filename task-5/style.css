@@ -1,8 +1,36 @@
 body {
-  background-color: lightgray;
-}
-h1{
-    color:
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
 }
 
-p
+.input-group {
+  margin-bottom: 10px;
+}
+
+label,
+input {
+  display: inline-block;
+  vertical-align: middle;
+}
+input {
+  padding: 5px;
+  width: 200px;
+}
+label {
+  width: 100px;
+}
+
+.btn {
+  display: block;
+  background-color: rgb(211, 86, 9);
+  border: none;
+  border-radius: 2px;
+  padding: 10px 25px;
+  color: white;
+  font-size: inherit;
+  margin: 25px 0;
+}
+input,
+button {
+  font-family: inherit;
+}
