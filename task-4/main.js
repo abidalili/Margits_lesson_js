@@ -2,59 +2,59 @@
 //for loop
 
 // ex-1
-for (let i = 1; 1 < 100; i += 2) {
-  console.log(i);
-}
+// for (let i = 1; 1 < 100; i += 2) {
+//   console.log(i);
+// }
 
 // ex-2
 //Make a program that prints all positive numbers that are smaller than
 //100 and even, in this order: 2 98 4 96 6 94... Print result in one line.
 
-let answer = "";
-let end = 98;
+// let answer = "";
+// let end = 98;
 
-for (let i = 2; i < 100; i += 2) {
-  answer += " " + i + " ";
-  answer += " " + end + " ";
-  end -= 2;
-}
-console.log(answer);
+// for (let i = 2; i < 100; i += 2) {
+//   answer += " " + i + " ";
+//   answer += " " + end + " ";
+//   end -= 2;
+// }
+// console.log(answer);
 
 //ex-3
 //Make a program that asks repeatedly from the user the distance (km) and
 //     time (h) and calculates average speed. The program ends when user gives
 //     0 for the distance. (After getting 0, the program does not ask anything
 //     from the user.)
-let distance, time;
+// let distance, time;
 
-while (distance != 0) {
-  distance = prompt("Enter distance in kilometers");
+// while (distance != 0) {
+//   distance = prompt("Enter distance in kilometers");
 
-  if (distance == 0) {
-    console.log("distance 0 - game over");
-    break;
-  }
+//   if (distance == 0) {
+//     console.log("distance 0 - game over");
+//     break;
+//   }
 
-  time = prompt("Enter time in hours");
-  let average = distance / time;
-  console.log("average is: ", average);
-}
-//4.  Make a program that asks 20 numbers from user. After that the program
-//     prints out how many of those numbers where even.
+//   time = prompt("Enter time in hours");
+//   let average = distance / time;
+//   console.log("average is: ", average);
+// }
+// //4.  Make a program that asks 20 numbers from user. After that the program
+// //     prints out how many of those numbers where even.
 
-let evenSum = 0;
-let numbers = parseInt(prompt("Enter a positive number"));
+// let evenSum = 0;
+// let numbers = parseInt(prompt("Enter a positive number"));
 
-while (numbers <= 20) {
-  if (numbers > 0 && numbers % 2 === 0) {
-    evenSum += numbers;
-    console.log(numbers);
-  }
+// while (numbers <= 20) {
+//   if (numbers > 0 && numbers % 2 === 0) {
+//     evenSum += numbers;
+//     console.log(numbers);
+//   }
 
-  numbers = parseInt(prompt("Enter a positive number"));
-}
+//   numbers = parseInt(prompt("Enter a positive number"));
+// }
 
-console.log("Sum of even numbers:", evenSum);
+// console.log("Sum of even numbers:", evenSum);
 
 // 5.  Make a program that asks numbers from the user, until user gives 0 and
 //     then program ends. In the end program prints out average of the numbers.
@@ -77,33 +77,33 @@ console.log("Sum of even numbers:", evenSum);
 // console.log("Sum of positive numbers:", total);
 // console.log("Average of positive numbers:", average);
 
-let userNum,
-  num1 = 0,
-  counter = 0;
-do {
-  userNum = parseFloat(prompt("Enter a number"));
-  if (userNum > 0) {
-    num1 += userNum;
-    counter++;
-  }
-} while (userNum != 0);
-console.log(`Average: ${num1 / counter}`);
+// let userNum,
+//   num1 = 0,
+//   counter = 0;
+// do {
+//   userNum = parseFloat(prompt("Enter a number"));
+//   if (userNum > 0) {
+//     num1 += userNum;
+//     counter++;
+//   }
+// } while (userNum != 0);
+// console.log(`Average: ${num1 / counter}`);
 
 // 6.  Make a program that asks 25 numbers form the user. In the end program
 //     printout average of the numbers.
 
-let sum = 0;
-let count = 0;
+// let sum = 0;
+// let count = 0;
 
-for (let i = 0; i < 25; i++) {
-  let number = parseInt(prompt("Enter a number: "));
-  sum += number;
-  count++;
-}
+// for (let i = 0; i < 25; i++) {
+//   let number = parseInt(prompt("Enter a number: "));
+//   sum += number;
+//   count++;
+// }
 
-let averageTotal = sum / count;
+// let averageTotal = sum / count;
 
-console.log("Average of the 25 numbers:", averageTotal);
+// console.log("Average of the 25 numbers:", averageTotal);
 
 // 7.  Make a program that ask first one number from the user. After that the
 //     program asks: "Do you want to continue giving numbers?(y/n)". If user
